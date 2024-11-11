@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Chính</title>
-    <link rel="stylesheet" href="face2.css">
+    <link rel="stylesheet" href="face1.css">
 </head>
 <body>
     <header id = "header" class="background-image">
@@ -16,17 +16,35 @@
 
         <nav>
             <ul>
-                <div class = "choose"><li><a href="#booking">Đặt Phòng</a></li></div>
-                <div class = "choose" ><li><a href="#history">Lịch Sử Đặt Phòng</a></li></div>
-                                    <li><a href="#profile">Thông Tin Cá Nhân</a></li>
-                <div class = "choose"><li><a href="#support">Hỗ Trợ</a></li></div>
-                <div class = "choose"><li><a href="login.html">Đăng Xuất</a></li></div>
+                <li><a href="#look">Xem Thông Tin Phòng</a></li>
+                <li><a href="#booking">Đặt Phòng</a></li>
+                <li><a href="#history">Lịch Sử Đặt Phòng</a></li>
+                <li><a href="#profile">Thông Tin Cá Nhân</a></li>
+                <li><a href="#support">Hỗ Trợ</a></li>
+                <li><a href="login.html">Đăng Xuất</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <!-- Phần Đặt Phòng -->
+        <section id = "option" class="Form">
+            <h2>Bạn muốn làm gì?</h2>
+            <p>[1] Xem thông tin các phòng có trong Hotel Del Luna</p>
+            <p>[2] Đặt phòng</p>
+            <div id = "choose_option">
+                <div class = "center-div">
+                    <LAbel for="choose">Nhập lựa chọn</LAbel><br>
+                        <textarea class="choose"></textarea> 
+                        <button type="submit">Gửi</button>
+                </div>
+            </div>
+        </section>
+        <section id = "look" class = "Form">
+            <h2>Xem Thông Tin Loại Phòng</h2>
+            <p>Sau đó gọi hàm in ra th  ông tin nè, có định dạng sẵn rồi</p>
+        </section>
+
         <section id="booking">
             <h2>Đặt Phòng Mới</h2>
             <form>

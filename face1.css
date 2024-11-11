@@ -49,8 +49,6 @@
 
 /* Header tổng thể */
 header {
-    background-color: #333;
-    color: #fff;
     padding: 1em;
     text-align: center;
     font-size: 18px;
@@ -80,7 +78,7 @@ nav ul li a:hover {
     color: #ffd89b; /* Đổi màu khi hover để hiệu ứng rõ ràng hơn */
 }
 
-/* Khung đăng nhập */
+/* form */
 .login-container, main section {
     max-width: 600px;
     margin: 20px auto;
@@ -89,6 +87,32 @@ nav ul li a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+.Form{
+    background-color:aquamarine;
+    height: 300px;
+}
+
+#choose_option{
+    width: 50%; /* hoặc một giá trị cố định như 300px */
+    margin: 60px auto; /* Căn giữa theo chiều ngang */
+    background-color: #555;
+    position: relative;
+}
+.center-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Dịch chuyển ngược lại 50% để chính giữa*/ 
+}
+
+#option .choose{
+    height: 25px;
+    width: 90px;
+    margin-top: 5px;
+    border-radius: 7px;
+}
+
 
 /* Biểu mẫu */
 form label, form input, form select, form textarea {
@@ -109,5 +133,5 @@ form button {
 }
 
 form button:hover {
-    background-color: #555;
+    background-color: #892424;
 }
