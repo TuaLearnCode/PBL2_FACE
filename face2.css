@@ -1,0 +1,113 @@
+/* Chỉnh lại header */
+#header {
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+    height: 300px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Phần hình nền cho header */
+.background-image {
+    background-image: url('./image/bg7.avif'); /* Đường dẫn đến ảnh nền */
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+/* Thêm lớp phủ tối */
+.background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35); /* Màu đen với độ mờ để chữ nổi bật hơn */
+    z-index: 1;
+}
+
+/* Chữ tiêu đề khách sạn */
+.TenHotel {
+    color: #f8d7b4; /* Màu sắc hài hòa và nổi bật hơn trên nền tối */
+   /* color: #2c3e50;*/
+    font-size: 48px;
+    font-weight: bolder;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+}
+
+
+/* Header tổng thể */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Menu điều hướng */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color:deeppink;/* Màu sắc liên kết để phù hợp với tiêu đề */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffd89b; /* Đổi màu khi hover để hiệu ứng rõ ràng hơn */
+}
+
+/* Khung đăng nhập */
+.login-container, main section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Biểu mẫu */
+form label, form input, form select, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+}

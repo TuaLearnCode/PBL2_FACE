@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL DEL LUNA - Quản lý khách sạn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HOTEL DEL LUNA</h1>
+        <h2>Quản lý khách sạn</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <h3>Loại Phòng</h3>
+                <button onclick="crud('create', 'loaiPhong')">Xem Loại Phòng</button>
+                <button onclick="crud('read', 'loaiPhong')">Thêm Loại Phòng</button>
+                <button onclick="crud('update', 'loaiPhong')">Sửa Loại Phòng</button>
+                <button onclick="crud('delete', 'loaiPhong')">Xóa Loại Phòng</button>
+            </div>
+            <div class="menu-item">
+                <h3>Phòng</h3>
+                <button onclick="crud('create', 'phong')">Xem Phòng</button>
+                <button onclick="crud('read', 'phong')">Thêm Phòng</button>
+                <button onclick="crud('update', 'phong')">Sửa Phòng</button>
+                <button onclick="crud('delete', 'phong')">Xóa Phòng</button>
+            </div>
+            <div class="menu-item">
+                <h3>Khách Hàng</h3>
+                <button onclick="crud('create', 'khachHang')">Xem Khách Hàng</button>
+                <button onclick="crud('read', 'khachHang')">Thêm Khách Hàng</button>
+                <button onclick="crud('update', 'khachHang')">Sửa Khách Hàng</button>
+                <button onclick="crud('delete', 'khachHang')">Xóa Khách Hàng</button>
+            </div>
+            <div class="menu-item">
+                <h3>Đặt Phòng</h3>
+                <button onclick="crud('create', 'datPhong')">Xem Đặt Phòng</button>
+                <button onclick="crud('read', 'datPhong')">Thêm Đặt Phòng</button>
+                <button onclick="crud('update', 'datPhong')">Sửa Đặt Phòng</button>
+                <button onclick="crud('delete', 'datPhong')">Xóa Đặt Phòng</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function crud(action, entity) {
+            alert(`Chức năng ${action.toUpperCase()} của ${entity}`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chính</title>
+    <link rel="stylesheet" href="face2.css">
+</head>
+<body>
+    <header id = "header" class="background-image">
+        <h1 class = "TenHotel"> Hotel Del Luna</h1>
+        
+                <p>Welcome
+                    Have Nice Day!
+                </p>
+
+        <nav>
+            <ul>
+                <div class = "choose"><li><a href="#booking">Đặt Phòng</a></li></div>
+                <div class = "choose" ><li><a href="#history">Lịch Sử Đặt Phòng</a></li></div>
+                                    <li><a href="#profile">Thông Tin Cá Nhân</a></li>
+                <div class = "choose"><li><a href="#support">Hỗ Trợ</a></li></div>
+                <div class = "choose"><li><a href="login.html">Đăng Xuất</a></li></div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Phần Đặt Phòng -->
+        <section id="booking">
+            <h2>Đặt Phòng Mới</h2>
+            <form>
+                <label for="room-type">Loại Phòng:</label>
+                <select id="room-type" name="room-type">
+                    <option value="single">Phòng đơn</option>
+                    <option value="double">Phòng đôi</option>
+                    <option value="family">Phòng gia đình</option>
+                </select>
+                <label for="checkin">Ngày Nhận Phòng:</label>
+                <input type="date" id="checkin" name="checkin" required>
+                <label for="checkout">Ngày Trả Phòng:</label>
+                <input type="date" id="checkout" name="checkout" required>
+                <button type="submit">Đặt Phòng</button>
+            </form>
+        </section>
+
+        <!-- Phần Lịch Sử Đặt Phòng -->
+        <section id="history">
+            <h2>Lịch Sử Đặt Phòng</h2>
+            <table>
+                <tr>
+                    <th>Mã Đặt Phòng</th>
+                    <th>Loại Phòng</th>
+                    <th>Ngày Đặt</th>
+                    <th>Trạng Thái</th>
+                </tr>
+                <tr>
+                    <td>12345</td>
+                    <td>Phòng Đôi</td>
+                    <td>01/10/2024</td>
+                    <td>Đã Hoàn Thành</td>
+                </tr>
+                <!-- Thêm các dòng khác theo dữ liệu thực tế -->
+            </table>
+        </section>
+
+        <!-- Phần Thông Tin Cá Nhân -->
+        <section id="profile">
+            <h2>Thông Tin Cá Nhân</h2>
+            <p>Tên: [Tên người dùng]</p>
+            <p>Email: [Email]</p>
+            <button>Chỉnh Sửa Thông Tin</button>
+        </section>
+
+        <!-- Phần Hỗ Trợ Khách Hàng -->
+        <section id="support">
+            <h2>Phản Hồi & Hỗ Trợ</h2>
+            <form>
+                <label for="feedback">Phản hồi của bạn:</label>
+                <textarea id="feedback" name="feedback"></textarea>
+                <button type="submit">Gửi</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
